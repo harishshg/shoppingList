@@ -103,4 +103,5 @@ const Wrapper = styled.div`
   margin-left: 20px;
   display: flex;
   flex-flow: row wrap;
+  background-color: #e9eefb;
 `;
