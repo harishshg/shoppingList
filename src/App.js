@@ -77,6 +77,14 @@ class App extends Component {
         image:
           "https://images.pexels.com/photos/1266982/pexels-photo-1266982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200",
       },
+      {
+        id: 10,
+        description: "Dell Inspiron",
+        price: 50000,
+        discount: 10,
+        image:
+          "https://images.pexels.com/photos/1266982/pexels-photo-1266982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200",
+      },
     ],
   };
   render() {
