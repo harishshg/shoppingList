@@ -29,7 +29,7 @@ function Product(props) {
         
       </PriceWrapper>
 
-      <div align="center" onClick={addBasket}><Button >Add to Cart</Button></div>
+      <div align="center" onClick={() => addBasket (description)}><Button >Add to Cart</Button></div>
 
     </ProdcutWrapper>
     

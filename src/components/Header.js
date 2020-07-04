@@ -30,7 +30,7 @@ import {connect } from 'react-redux';
 `;
 return (
 
-<Styles href='/' >
+<Styles >
     
   <Navbar bg="primary" variant="dark">
     <Nav>< FaStar /></Nav>

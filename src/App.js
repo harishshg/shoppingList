@@ -29,11 +29,11 @@ class App extends Component {
           <Switch>
            
           <Route path ="/cart" component={Cart}/>
-          </Switch>
-          < Wrapper >
+         
+          <Wrapper>
             {
               this.state.productList.map((p) => (< Product {...p} key={p.id} />))}
-          </ Wrapper>
+          </ Wrapper>  </Switch>
       </BrowserRouter>
       </div>
       </Provider>
