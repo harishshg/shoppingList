@@ -2,6 +2,8 @@ import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import  '../App.css';
 import styled from "styled-components";
+import {BsPlusCircle} from 'react-icons/bs';
+import {FiMinusCircle} from 'react-icons/fi'
 
 
 function Cart(props) {
@@ -26,8 +28,10 @@ const { image, basketProps} = props;
                 <div className='price sm-hide'>{product.price}
                 </div>
                 <div className='quantity'>
+                  <BsPlusCircle/>  
 
                    <span>{product.numbers}</span> 
+                  <FiMinusCircle />
                 </div>
                <div className="total">{productsInCart.numbers * product.price}</div> 
             </Fragment>
@@ -37,9 +41,9 @@ const { image, basketProps} = props;
         <div className='container-products' >
              <div className='product-header'>
                 <h5 className= 'product-title'>product</h5>
-                <h5 className= 'product-title'>product</h5>
-                <h5 className= 'product-title'>product</h5>
-                <h5 className= 'product-title'>product</h5>
+                <h5 className= 'price sm-hide'>price</h5>
+                <h5 className= 'quantity'>quantity</h5>
+                <h5 className= 'total'>total</h5>
              </div> 
         <div className='products'>
              {productsInCart}
