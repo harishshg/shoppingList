@@ -143,6 +143,7 @@ export default (state = initialState, action ) => {
                 productSelected.inCart = false;
                 return{
                     ...state,
+                    basketNumbers: state.basketNumbers - numberBackup,
                     cartCost: state.cartCost - (numberBackup * productSelected),
                     products:{
                         ...state.products,
